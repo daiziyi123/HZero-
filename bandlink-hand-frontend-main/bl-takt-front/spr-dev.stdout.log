@@ -1,0 +1,412 @@
+yarn run v1.22.22
+$ cross-env UMI_ENV=dev umi dev
+拦截器服务运行在：http://127.0.0.1:10011
+你可以在浏览器打开此地址操作GUI：http://127.0.0.1:10011/__interceptor
+Bundle with webpack 5...
+Starting the development server...
+i Compiling Webpack
+mock服务运行在：http://127.0.0.1:8000
+你可以在浏览器打开此地址以查看文档：http://127.0.0.1:8000/__doc__
+√ Webpack: Compiled successfully in 3.68s
+ DONE  Compiled successfully in 3685ms10:22:03
+
+
+  App running at:
+  - Local:   http://localhost:8000 (copied to clipboard)
+  - Network: http://192.168.100.178:8000
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 6.38s.
+» src\.umi\core changed. Rebuilding Webpack
+ WAIT  Compiling...10:22:03
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 386.53ms
+ DONE  Compiled successfully in 390ms10:22:04
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 6.96s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...10:43:09
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 984.07ms
+ DONE  Compiled successfully in 985ms10:43:10
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 1273.85s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...10:43:28
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 694.54ms
+ DONE  Compiled successfully in 697ms10:43:29
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 1292.08s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...10:43:43
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 551.68ms
+ DONE  Compiled successfully in 553ms10:43:43
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 1306.56s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...10:43:56
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 549.21ms
+ DONE  Compiled successfully in 550ms10:43:57
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 1320.23s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...10:44:11
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 807.15ms
+ DONE  Compiled successfully in 810ms10:44:12
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 1335.55s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...10:51:40
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 881.10ms
+ DONE  Compiled successfully in 882ms10:51:41
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 1784.14s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...10:51:55
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 488.18ms
+ DONE  Compiled successfully in 489ms10:51:56
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 1799.00s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...11:00:10
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 868.19ms
+ DONE  Compiled successfully in 871ms11:00:11
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 2294.79s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...11:00:36
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 682.13ms
+ DONE  Compiled successfully in 683ms11:00:37
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 2320.21s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...11:00:49
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 597.64ms
+ DONE  Compiled successfully in 598ms11:00:50
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 2332.99s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...11:28:28
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 1.28s
+ DONE  Compiled successfully in 1284ms11:28:29
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 3992.36s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...11:28:54
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 714.28ms
+ DONE  Compiled successfully in 715ms11:28:55
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 4018.40s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...11:29:16
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 1.02s
+ DONE  Compiled successfully in 1019ms11:29:17
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 4040.05s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...11:29:40
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 645.71ms
+ DONE  Compiled successfully in 647ms11:29:40
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 4063.71s.
+.smockrc.js配置文件已改变，成功刷新服务。
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...21:06:30
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 961.47ms
+ DONE  Compiled successfully in 964ms21:06:31
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 125074.14s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...21:06:46
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 601.70ms
+ DONE  Compiled successfully in 603ms21:06:47
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 125090.48s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...21:06:56
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 906.61ms
+ DONE  Compiled successfully in 908ms21:06:57
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 125100.69s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...21:07:49
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 854.53ms
+ DONE  Compiled successfully in 857ms21:07:50
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 125153.28s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...21:07:57
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 592.62ms
+ DONE  Compiled successfully in 593ms21:07:58
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 125161.37s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...21:10:08
+
+i Compiling Webpack
+√ Webpack: Compiled with some errors in 356.98ms
+ ERROR  Failed to compile with 1 errors21:10:08
+
+ error  in ./packages/key-bl-front/src/routes/FinalValue/index.tsx
+
+Syntax Error: SyntaxError: E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\packages\key-bl-front\src\routes\FinalValue\index.tsx: Unexpected token, expected "," (26:38)
+
+  24 |
+  25 | const columns = [
+> 26 |   '閾嗘帴鏃堕棿', '缂栧彿', '璁惧', '杞﹁韩娴佹按鍙?, '绋嬪簭鍙?, '閾嗛拤闀垮害', '涓?-X鑼冨洿', '閾嗛拤澶撮儴楂樺害(mm)', '涓?-Y鑼冨洿',
+     |                                       ^
+  27 |   '搴曢儴鍘氬害(mm)', '涓?-X鑼冨洿', '閾嗛拤鎬婚暱搴?mm)', '涓?-Y鑼冨洿', '搴曢儴鍘氬害(mm)', '缁?X鑼冨洿', '浼烘湇涓濇潬浣嶇疆(mm)',
+  28 |   '缁?Y鑼冨洿', '瀹為檯閾嗘帴鍔?kN)', '缁撴灉鏂囨湰', '鏉ユ簮', '鍒ゅ畾缁撴灉', '褰卞搷', '鎿嶄綔',
+  29 | ];
+    at parser.next (<anonymous>)
+    at normalizeFile.next (<anonymous>)
+    at run.next (<anonymous>)
+    at transform.next (<anonymous>)
+
+
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...21:10:32
+
+i Compiling Webpack
+√ Webpack: Compiled with some errors in 179.14ms
+ ERROR  Failed to compile with 1 errors21:10:32
+
+ error  in ./packages/key-bl-front/src/routes/FinalValue/index.tsx
+
+Syntax Error: SyntaxError: E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\packages\key-bl-front\src\routes\FinalValue\index.tsx: Unexpected token, expected "," (26:38)
+
+  24 |
+  25 | const columns = [
+> 26 |   '閾嗘帴鏃堕棿', '缂栧彿', '璁惧', '杞﹁韩娴佹按鍙?, '绋嬪簭鍙?, '閾嗛拤闀垮害', '涓?-X鑼冨洿', '閾嗛拤澶撮儴楂樺害(mm)', '涓?-Y鑼冨洿',
+     |                                       ^
+  27 |   '搴曢儴鍘氬害(mm)', '涓?-X鑼冨洿', '閾嗛拤鎬婚暱搴?mm)', '涓?-Y鑼冨洿', '搴曢儴鍘氬害(mm)', '缁?X鑼冨洿', '浼烘湇涓濇潬浣嶇疆(mm)',
+  28 |   '缁?Y鑼冨洿', '瀹為檯閾嗘帴鍔?kN)', '缁撴灉鏂囨湰', '鏉ユ簮', '鍒ゅ畾缁撴灉', '褰卞搷', '鎿嶄綔',
+  29 | ];
+    at parser.next (<anonymous>)
+    at normalizeFile.next (<anonymous>)
+    at run.next (<anonymous>)
+    at transform.next (<anonymous>)
+
+
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...21:11:24
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 637.74ms
+ DONE  Compiled successfully in 638ms21:11:24
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 125367.78s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...21:11:57
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 581.62ms
+ DONE  Compiled successfully in 582ms21:11:58
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 125401.40s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...21:12:15
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 688.97ms
+ DONE  Compiled successfully in 690ms21:12:16
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 125419.50s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...21:12:23
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 561.42ms
+ DONE  Compiled successfully in 562ms21:12:23
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 125426.76s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...21:12:54
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 580.98ms
+ DONE  Compiled successfully in 582ms21:12:54
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 125457.54s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...21:13:02
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 528.77ms
+ DONE  Compiled successfully in 529ms21:13:03
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 125466.03s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...21:13:38
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 610.87ms
+ DONE  Compiled successfully in 612ms21:13:39
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 125502.12s.
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...21:14:29
+
+i Compiling Webpack
+√ Webpack: Compiled with some errors in 433.56ms
+ ERROR  Failed to compile with 1 errors21:14:29
+
+ error  in ./packages/key-bl-front/src/routes/FinalValue/index.tsx
+
+Syntax Error: SyntaxError: E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\packages\key-bl-front\src\routes\FinalValue\index.tsx: Expected corresponding JSX closing tag for <button>. (556:14)
+
+  554 |                 <button type="button" disabled={currentPage >= totalPages} onClick={() => setCurrentPage(page => Math.min(totalPages, page + 1))}>鈥?/button>
+  555 |                 <button type="button" disabled={currentPage >= totalPages} onClick={() => setCurrentPage(totalPages)}>禄</button>
+> 556 |               </div>
+      |               ^
+  557 |             </div>
+  558 |           </section>
+  559 |
+
+
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...21:14:56
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 608.62ms
+ DONE  Compiled successfully in 609ms21:14:56
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 125579.72s.
+.smockrc.js配置文件已改变，成功刷新服务。
+» packages\key-bl-front\src\routes\FinalValue\index.tsx changed. Rebuilding Webpack
+ WAIT  Compiling...21:19:46
+
+i Compiling Webpack
+√ Webpack: Compiled successfully in 1.02s
+ DONE  Compiled successfully in 1025ms21:19:47
+
+
+启动模块: key-focus-front (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front)
+访问地址: http://localhost:8000
+Done in 125870.20s.
+.smockrc.js配置文件已改变，成功刷新服务。
+.smockrc.js配置文件已改变，成功刷新服务。
+Done in 171082.97s.

@@ -1,0 +1,235 @@
+warning package.json: "dependencies" has dependency "lerna" with range "^3.20.2" that collides with a dependency in "devDependencies" of the same name with version "3.20.2"
+warning package.json: "dependencies" has dependency "prettier" with range "^1.19.1" that collides with a dependency in "devDependencies" of the same name with version "^2.6.2"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+`isModuleDeclaration` has been deprecated, please migrate to `isImportOrExportDeclaration`
+    at isModuleDeclaration (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@babel\types\lib\validators\generated\index.js:2793:35)
+    at PluginPass.Program (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\babel-plugin-lodash\lib\index.js:102:44)
+ERROR in ./packages/key-bl-front/src/routes/FinalValue/index.tsx
+Module build failed (from ./node_modules/@umijs/deps/compiled/babel-loader/index.js):
+SyntaxError: E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\packages\key-bl-front\src\routes\FinalValue\index.tsx: Unexpected token, expected "," (26:38)
+
+  24 |
+  25 | const columns = [
+> 26 |   '閾嗘帴鏃堕棿', '缂栧彿', '璁惧', '杞﹁韩娴佹按鍙?, '绋嬪簭鍙?, '閾嗛拤闀垮害', '涓?-X鑼冨洿', '閾嗛拤澶撮儴楂樺害(mm)', '涓?-Y鑼冨洿',
+     |                                       ^
+  27 |   '搴曢儴鍘氬害(mm)', '涓?-X鑼冨洿', '閾嗛拤鎬婚暱搴?mm)', '涓?-Y鑼冨洿', '搴曢儴鍘氬害(mm)', '缁?X鑼冨洿', '浼烘湇涓濇潬浣嶇疆(mm)',
+  28 |   '缁?Y鑼冨洿', '瀹為檯閾嗘帴鍔?kN)', '缁撴灉鏂囨湰', '鏉ユ簮', '鍒ゅ畾缁撴灉', '褰卞搷', '鎿嶄綔',
+  29 | ];
+    at instantiate (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:23682:32)
+    at constructor (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:23977:12)
+    at TypeScriptParserMixin.raise (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:26874:19)
+    at TypeScriptParserMixin.unexpected (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:26904:16)
+    at TypeScriptParserMixin.expect (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:27246:28)
+    at TypeScriptParserMixin.parseExprList (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:35614:14)
+    at TypeScriptParserMixin.parseArrayLike (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:35523:26)
+    at TypeScriptParserMixin.parseArrayLike (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:32753:24)
+    at TypeScriptParserMixin.parseExprAtom (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34792:23)
+    at TypeScriptParserMixin.parseExprAtom (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:30593:20)
+    at TypeScriptParserMixin.parseExprSubscripts (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34509:23)
+    at TypeScriptParserMixin.parseUpdate (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34492:21)
+    at TypeScriptParserMixin.parseMaybeUnary (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34468:23)
+    at TypeScriptParserMixin.parseMaybeUnary (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:33357:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34306:61)
+    at TypeScriptParserMixin.parseExprOps (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34311:23)
+    at TypeScriptParserMixin.parseMaybeConditional (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34288:23)
+    at TypeScriptParserMixin.parseMaybeAssign (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34249:21)
+    at TypeScriptParserMixin.parseMaybeAssign (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:33304:20)
+    at E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34219:39
+    at TypeScriptParserMixin.allowInAnd (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:35894:16)
+    at TypeScriptParserMixin.parseMaybeAssignAllowIn (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34219:17)
+    at TypeScriptParserMixin.parseVar (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36874:91)
+    at TypeScriptParserMixin.parseVarStatement (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36715:10)
+    at TypeScriptParserMixin.parseVarStatement (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:32967:31)
+    at TypeScriptParserMixin.parseStatementContent (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36298:23)
+    at TypeScriptParserMixin.parseStatementContent (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:33001:18)
+    at TypeScriptParserMixin.parseStatementLike (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36203:17)
+    at TypeScriptParserMixin.parseModuleItem (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36180:17)
+    at TypeScriptParserMixin.parseBlockOrModuleBlockBody (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36804:36)
+    at TypeScriptParserMixin.parseBlockBody (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36797:10)
+    at TypeScriptParserMixin.parseProgram (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36079:10)
+    at TypeScriptParserMixin.parseTopLevel (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36069:25)
+    at TypeScriptParserMixin.parse (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:37964:10)
+    at TypeScriptParserMixin.parse (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:33643:18)
+    at parse (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:37984:26)
+    at parser (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:525285:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:526596:38)
+    at normalizeFile.next (<anonymous>)
+    at run (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:526446:50)
+    at run.next (<anonymous>)
+    at transform (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:525948:41)
+    at transform.next (<anonymous>)
+    at step (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:480174:32)
+    at E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:480186:13
+    at async.call.result.err.err (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:480136:11)
+ @ ./src/routes/FinalValue/index.tsx 1:0-79 1:0-79
+ @ ./src/.umi/core/routes.ts 111:22-96
+ @ ./src/.umi/umi.ts 9:0-42 26:33-42 64:37-80:3 64:2-80:4 65:14-38
+ @ ./src/.umi/hzero-entry.ts 69:41-56
+
+webpack compiled with 1 error
+ERROR in ./packages/key-bl-front/src/routes/FinalValue/index.tsx
+Module build failed (from ./node_modules/@umijs/deps/compiled/babel-loader/index.js):
+SyntaxError: E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\packages\key-bl-front\src\routes\FinalValue\index.tsx: Unexpected token, expected "," (26:38)
+
+  24 |
+  25 | const columns = [
+> 26 |   '閾嗘帴鏃堕棿', '缂栧彿', '璁惧', '杞﹁韩娴佹按鍙?, '绋嬪簭鍙?, '閾嗛拤闀垮害', '涓?-X鑼冨洿', '閾嗛拤澶撮儴楂樺害(mm)', '涓?-Y鑼冨洿',
+     |                                       ^
+  27 |   '搴曢儴鍘氬害(mm)', '涓?-X鑼冨洿', '閾嗛拤鎬婚暱搴?mm)', '涓?-Y鑼冨洿', '搴曢儴鍘氬害(mm)', '缁?X鑼冨洿', '浼烘湇涓濇潬浣嶇疆(mm)',
+  28 |   '缁?Y鑼冨洿', '瀹為檯閾嗘帴鍔?kN)', '缁撴灉鏂囨湰', '鏉ユ簮', '鍒ゅ畾缁撴灉', '褰卞搷', '鎿嶄綔',
+  29 | ];
+    at instantiate (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:23682:32)
+    at constructor (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:23977:12)
+    at TypeScriptParserMixin.raise (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:26874:19)
+    at TypeScriptParserMixin.unexpected (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:26904:16)
+    at TypeScriptParserMixin.expect (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:27246:28)
+    at TypeScriptParserMixin.parseExprList (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:35614:14)
+    at TypeScriptParserMixin.parseArrayLike (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:35523:26)
+    at TypeScriptParserMixin.parseArrayLike (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:32753:24)
+    at TypeScriptParserMixin.parseExprAtom (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34792:23)
+    at TypeScriptParserMixin.parseExprAtom (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:30593:20)
+    at TypeScriptParserMixin.parseExprSubscripts (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34509:23)
+    at TypeScriptParserMixin.parseUpdate (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34492:21)
+    at TypeScriptParserMixin.parseMaybeUnary (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34468:23)
+    at TypeScriptParserMixin.parseMaybeUnary (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:33357:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34306:61)
+    at TypeScriptParserMixin.parseExprOps (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34311:23)
+    at TypeScriptParserMixin.parseMaybeConditional (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34288:23)
+    at TypeScriptParserMixin.parseMaybeAssign (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34249:21)
+    at TypeScriptParserMixin.parseMaybeAssign (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:33304:20)
+    at E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34219:39
+    at TypeScriptParserMixin.allowInAnd (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:35894:16)
+    at TypeScriptParserMixin.parseMaybeAssignAllowIn (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34219:17)
+    at TypeScriptParserMixin.parseVar (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36874:91)
+    at TypeScriptParserMixin.parseVarStatement (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36715:10)
+    at TypeScriptParserMixin.parseVarStatement (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:32967:31)
+    at TypeScriptParserMixin.parseStatementContent (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36298:23)
+    at TypeScriptParserMixin.parseStatementContent (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:33001:18)
+    at TypeScriptParserMixin.parseStatementLike (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36203:17)
+    at TypeScriptParserMixin.parseModuleItem (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36180:17)
+    at TypeScriptParserMixin.parseBlockOrModuleBlockBody (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36804:36)
+    at TypeScriptParserMixin.parseBlockBody (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36797:10)
+    at TypeScriptParserMixin.parseProgram (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36079:10)
+    at TypeScriptParserMixin.parseTopLevel (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36069:25)
+    at TypeScriptParserMixin.parse (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:37964:10)
+    at TypeScriptParserMixin.parse (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:33643:18)
+    at parse (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:37984:26)
+    at parser (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:525285:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:526596:38)
+    at normalizeFile.next (<anonymous>)
+    at run (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:526446:50)
+    at run.next (<anonymous>)
+    at transform (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:525948:41)
+    at transform.next (<anonymous>)
+    at step (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:480174:32)
+    at E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:480186:13
+    at async.call.result.err.err (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:480136:11)
+ @ ./src/routes/FinalValue/index.tsx 1:0-79 1:0-79
+ @ ./src/.umi/core/routes.ts 111:22-96
+ @ ./src/.umi/umi.ts 9:0-42 26:33-42 64:37-80:3 64:2-80:4 65:14-38
+ @ ./src/.umi/hzero-entry.ts 69:41-56
+
+webpack compiled with 1 error
+ERROR in ./packages/key-bl-front/src/routes/FinalValue/index.tsx
+Module build failed (from ./node_modules/@umijs/deps/compiled/babel-loader/index.js):
+SyntaxError: E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\packages\key-bl-front\src\routes\FinalValue\index.tsx: Expected corresponding JSX closing tag for <button>. (556:14)
+
+  554 |                 <button type="button" disabled={currentPage >= totalPages} onClick={() => setCurrentPage(page => Math.min(totalPages, page + 1))}>鈥?/button>
+  555 |                 <button type="button" disabled={currentPage >= totalPages} onClick={() => setCurrentPage(totalPages)}>禄</button>
+> 556 |               </div>
+      |               ^
+  557 |             </div>
+  558 |           </section>
+  559 |
+    at instantiate (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:23682:32)
+    at constructor (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:23977:12)
+    at TypeScriptParserMixin.raise (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:26874:19)
+    at TypeScriptParserMixin.jsxParseElementAt (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:30551:16)
+    at TypeScriptParserMixin.jsxParseElementAt (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:30519:32)
+    at TypeScriptParserMixin.jsxParseElementAt (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:30519:32)
+    at TypeScriptParserMixin.jsxParseElementAt (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:30519:32)
+    at TypeScriptParserMixin.jsxParseElementAt (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:30519:32)
+    at TypeScriptParserMixin.jsxParseElementAt (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:30519:32)
+    at TypeScriptParserMixin.jsxParseElementAt (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:30519:32)
+    at TypeScriptParserMixin.jsxParseElementAt (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:30519:32)
+    at TypeScriptParserMixin.jsxParseElementAt (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:30519:32)
+    at TypeScriptParserMixin.jsxParseElement (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:30576:17)
+    at TypeScriptParserMixin.parseExprAtom (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:30588:19)
+    at TypeScriptParserMixin.parseExprSubscripts (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34509:23)
+    at TypeScriptParserMixin.parseUpdate (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34492:21)
+    at TypeScriptParserMixin.parseMaybeUnary (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34468:23)
+    at TypeScriptParserMixin.parseMaybeUnary (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:33357:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34306:61)
+    at TypeScriptParserMixin.parseExprOps (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34311:23)
+    at TypeScriptParserMixin.parseMaybeConditional (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34288:23)
+    at TypeScriptParserMixin.parseMaybeAssign (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34249:21)
+    at E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:33293:39
+    at TypeScriptParserMixin.tryParse (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:27253:20)
+    at TypeScriptParserMixin.parseMaybeAssign (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:33293:18)
+    at E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34219:39
+    at TypeScriptParserMixin.allowInAnd (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:35899:12)
+    at TypeScriptParserMixin.parseMaybeAssignAllowIn (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34219:17)
+    at TypeScriptParserMixin.parseParenAndDistinguishExpression (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:35132:28)
+    at TypeScriptParserMixin.parseExprAtom (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34783:23)
+    at TypeScriptParserMixin.parseExprAtom (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:30593:20)
+    at TypeScriptParserMixin.parseExprSubscripts (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34509:23)
+    at TypeScriptParserMixin.parseUpdate (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34492:21)
+    at TypeScriptParserMixin.parseMaybeUnary (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34468:23)
+    at TypeScriptParserMixin.parseMaybeUnary (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:33357:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34306:61)
+    at TypeScriptParserMixin.parseExprOps (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34311:23)
+    at TypeScriptParserMixin.parseMaybeConditional (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34288:23)
+    at TypeScriptParserMixin.parseMaybeAssign (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34249:21)
+    at TypeScriptParserMixin.parseMaybeAssign (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:33304:20)
+    at TypeScriptParserMixin.parseExpressionBase (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34203:23)
+    at E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34199:39
+    at TypeScriptParserMixin.allowInAnd (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:35894:16)
+    at TypeScriptParserMixin.parseExpression (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34199:17)
+    at TypeScriptParserMixin.parseReturnStatement (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36618:28)
+    at TypeScriptParserMixin.parseStatementContent (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36236:21)
+    at TypeScriptParserMixin.parseStatementContent (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:33001:18)
+    at TypeScriptParserMixin.parseStatementLike (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36203:17)
+    at TypeScriptParserMixin.parseStatementListItem (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36183:17)
+    at TypeScriptParserMixin.parseBlockOrModuleBlockBody (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36804:61)
+    at TypeScriptParserMixin.parseBlockBody (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36797:10)
+    at TypeScriptParserMixin.parseBlock (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:36785:10)
+    at TypeScriptParserMixin.parseFunctionBody (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:35566:24)
+    at TypeScriptParserMixin.parseArrowExpression (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:35541:10)
+    at TypeScriptParserMixin.parseParenAndDistinguishExpression (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:35144:12)
+    at TypeScriptParserMixin.parseExprAtom (E:\111\SPR\bandlink-hand-frontend-main-v2\bandlink-hand-frontend-main\bl-takt-front\node_modules\@umijs\deps\compiled\babel\bundle.js:34783:23)
+ @ ./src/routes/FinalValue/index.tsx 1:0-79 1:0-79
+ @ ./src/.umi/core/routes.ts 111:22-96
+ @ ./src/.umi/umi.ts 9:0-42 26:33-42 64:37-80:3 64:2-80:4 65:14-38
+ @ ./src/.umi/hzero-entry.ts 69:41-56
+
+webpack compiled with 1 error
+[HPM] Error occurred while trying to proxy request /api/v1/spr/final-value/statistics from localhost:8000 to http://f25a4aae.natappfree.cc (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
+[HPM] Error occurred while trying to proxy request /api/v1/spr/final-value/page?pageNum=1&pageSize=15 from localhost:8000 to http://f25a4aae.natappfree.cc (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
+[HPM] Error occurred while trying to proxy request /api/v1/spr/final-value/options from localhost:8000 to http://f25a4aae.natappfree.cc (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
+[HPM] Error occurred while trying to proxy request /api/v1/spr/final-value/control-chart from localhost:8000 to http://f25a4aae.natappfree.cc (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
+
+<--- Last few GCs --->
+
+[25892:000001DF30771590] 171081269 ms: Mark-sweep 4030.0 (4128.9) -> 4024.4 (4139.7) MB, 1002.7 / 3.8 ms  (average mu = 0.984, current mu = 0.218) allocation failure scavenge might not succeed
+[25892:000001DF30771590] 171082381 ms: Mark-sweep 4040.2 (4139.7) -> 4035.0 (4155.2) MB, 1102.0 / 2.9 ms  (average mu = 0.963, current mu = 0.010) allocation failure scavenge might not succeed
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory
+ 1: 00007FF7AF40158F v8::internal::CodeObjectRegistry::~CodeObjectRegistry+122159
+ 2: 00007FF7AF38B326 DSA_meth_get_flags+64118
+ 3: 00007FF7AF38C3A2 DSA_meth_get_flags+68338
+ 4: 00007FF7AFCC2374 v8::Isolate::ReportExternalAllocationLimitReached+116
+ 5: 00007FF7AFCAC93D v8::SharedArrayBuffer::Externalize+781
+ 6: 00007FF7AFB4FEBC v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1468
+ 7: 00007FF7AFB4CFD4 v8::internal::Heap::CollectGarbage+4244
+ 8: 00007FF7AFB4A950 v8::internal::Heap::AllocateExternalBackingStore+2000
+ 9: 00007FF7AFB6F4D6 v8::internal::Factory::NewFillerObject+214
+10: 00007FF7AF8A24D5 v8::internal::DateCache::Weekday+1797
+11: 00007FF7AFD50051 v8::internal::SetupIsolateDelegate::SetupHeap+494417
+12: 000001DF33456900 

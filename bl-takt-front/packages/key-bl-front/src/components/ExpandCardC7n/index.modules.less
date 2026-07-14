@@ -1,0 +1,22 @@
+.tabCard {
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 3px;
+    height: 14px;
+    background-color: #1e3255;
+    pointer-events: none;
+  }
+
+  :global {
+    .c7n-card-head {
+      padding-left: 0;
+    }
+
+    .c7n-tabs-nav {
+      font-size: 14px;
+    }
+  }
+}

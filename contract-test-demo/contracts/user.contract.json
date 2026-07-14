@@ -1,0 +1,19 @@
+{
+  "consumer": "frontend-user-page",
+  "provider": "backend-user-service",
+  "request": {
+    "method": "GET",
+    "path": "/api/user/1"
+  },
+  "response": {
+    "status": 200,
+    "body": {
+      "code": "number",
+      "message": "string",
+      "data": {
+        "id": "number",
+        "name": "string"
+      }
+    }
+  }
+}

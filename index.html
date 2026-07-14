@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>焊装智能管理系统 | 设备健康管理</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { height: 100%; overflow: hidden; font-family: 'Segoe UI', 'Inter', system-ui, sans-serif; }
+        .app-shell { display: flex; height: 100vh; width: 100%; }
+        .sidebar {
+            width: 260px; min-width: 260px; background: #EBEBEB; border-right: 1px solid #D0D0D0;
+            display: flex; flex-direction: column; overflow: hidden; flex-shrink: 0;
+            transition: width 0.2s ease, min-width 0.2s ease;
+        }
+        .sidebar-header {
+            padding: 14px 16px; background: #E0E0E0; border-bottom: 1px solid #CCC;
+            font-size: 0.85rem; font-weight: 600; color: #333; display: flex; align-items: center; gap: 8px;
+            white-space: nowrap;
+        }
+        .sidebar-header i { color: #2563EB; }
+        .sidebar-nav { flex: 1; overflow-y: auto; padding: 8px 0; }
+        .nav-group { margin-bottom: 2px; }
+        .nav-group-title {
+            padding: 8px 14px; font-size: 0.78rem; font-weight: 600; color: #444; cursor: pointer;
+            display: flex; align-items: center; gap: 6px; user-select: none; white-space: nowrap;
+        }
+        .nav-group-title:hover { background: #E0E0E0; }
+        .nav-group-title i { font-size: 0.65rem; color: #666; width: 12px; transition: transform 0.2s; }
+        .nav-group:not(.open) .nav-group-title i { transform: rotate(-90deg); }
+        .nav-group:not(.open) .nav-list { display: none; }
+        .nav-list { list-style: none; }
+        .nav-item { margin: 0; }
+        .nav-item.nav-sub .nav-link { padding-left: 44px; font-size: 0.72rem; color: #555; }
+        .nav-item.nav-sub .nav-dot { font-size: 0.3rem; }
+        .nav-link {
+            display: flex; align-items: center; gap: 8px; padding: 7px 14px 7px 28px;
+            color: #333; text-decoration: none; font-size: 0.78rem; transition: background 0.15s;
+            border-left: 3px solid transparent; white-space: nowrap;
+        }
+        .nav-link:hover { background: #D8D8D8; }
+        .nav-link.active { background: #C8C8C8; border-left-color: #2563EB; font-weight: 600; }
+        .nav-dot { font-size: 0.35rem; color: #888; }
+        .nav-link.active .nav-dot { color: #2563EB; }
+        .main-area { flex: 1; display: flex; flex-direction: column; overflow: hidden; background: #F5F7FA; min-width: 0; }
+        .top-bar {
+            height: 44px; background: #FFF; border-bottom: 1px solid #E2E8F0;
+            display: flex; align-items: center; padding: 0 16px; gap: 12px; flex-shrink: 0;
+        }
+        .menu-toggle {
+            background: none; border: none; font-size: 1.1rem; color: #475569; cursor: pointer; padding: 4px 8px;
+        }
+        .page-title-bar { font-size: 0.9rem; font-weight: 600; color: #0F172A; }
+        .content-area { flex: 1; position: relative; overflow: hidden; }
+        .page-frame {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            border: none; display: none; background: #F5F7FA;
+        }
+        .page-frame.active { display: block; }
+        .sidebar.collapsed { width: 0; min-width: 0; overflow: hidden; border-right: none; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-thumb { background: #BBB; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header"><i class="fas fa-heartbeat"></i> 设备健康管理</div>
+            <nav class="sidebar-nav">
+            <div class="nav-group open">
+                <div class="nav-group-title"><i class="fas fa-caret-down"></i> 设备健康管理</div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" data-page="p01" class="nav-link active"><i class="fas fa-circle nav-dot"></i> 设备健康总览</a></li>
+                    <li class="nav-item"><a href="#" data-page="p02" class="nav-link"><i class="fas fa-circle nav-dot"></i> HI评分指标配置</a></li>
+                    <li class="nav-item"><a href="#" data-page="p03-1" class="nav-link"><i class="fas fa-circle nav-dot"></i> 机器人综合健康总览</a></li>
+                    <li class="nav-item nav-sub"><a href="#" data-page="p03-2" class="nav-link"><i class="fas fa-circle nav-dot"></i> 机器人详情</a></li>
+                    <li class="nav-item"><a href="#" data-page="p04-1" class="nav-link"><i class="fas fa-circle nav-dot"></i> 气缸综合健康总览</a></li>
+                    <li class="nav-item nav-sub"><a href="#" data-page="p04-2" class="nav-link"><i class="fas fa-circle nav-dot"></i> 气缸详情</a></li>
+                    <li class="nav-item"><a href="#" data-page="p05-1" class="nav-link"><i class="fas fa-circle nav-dot"></i> 伺服电机综合健康总览</a></li>
+                    <li class="nav-item nav-sub"><a href="#" data-page="p05-2" class="nav-link"><i class="fas fa-circle nav-dot"></i> 伺服电机详情</a></li>
+                    <li class="nav-item"><a href="#" data-page="p06" class="nav-link"><i class="fas fa-circle nav-dot"></i> 参数变更履历</a></li>
+                    <li class="nav-item"><a href="#" data-page="p07" class="nav-link"><i class="fas fa-circle nav-dot"></i> 设备基础数据</a></li>
+                </ul>
+            </div>
+            </nav>
+        </aside>
+        <div class="main-area">
+            <div class="top-bar">
+                <button class="menu-toggle" id="menuToggle" title="折叠菜单"><i class="fas fa-bars"></i></button>
+                <span class="page-title-bar" id="pageTitle">设备健康总览</span>
+            </div>
+            <div class="content-area">
+            <iframe class="page-frame" id="frame-p01" data-page="p01" title="设备健康总览" src="P01 设备健康总览.html"></iframe>
+            <iframe class="page-frame" id="frame-p02" data-page="p02" title="HI评分指标配置" src="P02 HI评分指标配置.html"></iframe>
+            <iframe class="page-frame" id="frame-p03-1" data-page="p03-1" title="机器人综合健康总览" src="P03 1机器综合健康总览.html"></iframe>
+            <iframe class="page-frame" id="frame-p03-2" data-page="p03-2" title="机器人详情" src="P03 2机器人健康详情.html"></iframe>
+            <iframe class="page-frame" id="frame-p04-1" data-page="p04-1" title="气缸综合健康总览" src="P04 1气缸综合健康总览.html"></iframe>
+            <iframe class="page-frame" id="frame-p04-2" data-page="p04-2" title="气缸详情" src="P04 2气缸综合健康详情.html"></iframe>
+            <iframe class="page-frame" id="frame-p05-1" data-page="p05-1" title="伺服电机综合健康总览" src="P05 1伺服综合健康总览.html"></iframe>
+            <iframe class="page-frame" id="frame-p05-2" data-page="p05-2" title="伺服电机详情" src="P05 2伺服综合健康详情.html"></iframe>
+            <iframe class="page-frame" id="frame-p06" data-page="p06" title="参数变更履历" src="P06 参数变更履历.html"></iframe>
+            <iframe class="page-frame" id="frame-p07" data-page="p07" title="设备基础数据" src="P07 设备基础数据.html"></iframe>
+            </div>
+        </div>
+    </div>
+    <script>
+        const pageLabels = {"p01":"设备健康总览","p02":"HI评分指标配置","p03-1":"机器人综合健康总览","p03-2":"机器人详情","p04-1":"气缸综合健康总览","p04-2":"气缸详情","p05-1":"伺服电机综合健康总览","p05-2":"伺服电机详情","p06":"参数变更履历","p07":"设备基础数据"};
+
+        function resizeActiveFrame() {
+            const frame = document.querySelector('.page-frame.active');
+            if (!frame) return;
+            try {
+                frame.contentWindow.dispatchEvent(new Event('resize'));
+                if (frame.contentWindow.echarts) {
+                    frame.contentDocument.querySelectorAll('[id]').forEach(function(el) {
+                        const inst = frame.contentWindow.echarts.getInstanceByDom(el);
+                        if (inst) inst.resize();
+                    });
+                }
+            } catch (e) {}
+        }
+
+        function switchPage(pageId) {
+            document.querySelectorAll('.page-frame').forEach(function(f) { f.classList.remove('active'); });
+            document.querySelectorAll('.nav-link').forEach(function(l) { l.classList.remove('active'); });
+            const frame = document.getElementById('frame-' + pageId);
+            const link = document.querySelector('.nav-link[data-page="' + pageId + '"]');
+            if (frame) frame.classList.add('active');
+            if (link) link.classList.add('active');
+            document.getElementById('pageTitle').textContent = pageLabels[pageId] || pageId;
+            setTimeout(resizeActiveFrame, 100);
+            setTimeout(resizeActiveFrame, 500);
+        }
+
+        document.querySelectorAll('.nav-link').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                switchPage(link.dataset.page);
+            });
+        });
+
+        document.querySelectorAll('.nav-group-title').forEach(function(title) {
+            title.addEventListener('click', function() {
+                title.parentElement.classList.toggle('open');
+            });
+        });
+
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.toggle('collapsed');
+            setTimeout(resizeActiveFrame, 250);
+        });
+
+        window.addEventListener('resize', resizeActiveFrame);
+        document.getElementById('frame-p01').classList.add('active');
+    </script>
+</body>
+</html>

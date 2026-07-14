@@ -1,0 +1,57 @@
+.type-item:hover {
+  cursor: pointer;
+}
+
+.active-type {
+  display: inline-block;
+  color: rgb(8, 64, 248);
+  font-size: 14px;
+}
+
+.normal-type {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.type-num {
+  margin-left: 6px;
+  margin-right: 10px;
+  padding: 0px 10px;
+  height: 17px;
+  border-radius: 20px;
+  background-color: red;
+  color: #fff;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-box {
+  :global {
+    .c7n-card-body {
+      height: calc(100% - 52px);
+    }
+  }
+}
+
+.urgentFlag-box {
+  position: relative;
+  overflow: hidden;
+  min-height: 28px;
+}
+.urgentFlag-box-icon {
+  position: absolute;
+  right: -18px;
+  top: 2px;
+  height: 14px;
+  width: 50px;
+  transform: rotate(45deg);
+  background-color: rgb(242, 58, 80);
+  color: #fff;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

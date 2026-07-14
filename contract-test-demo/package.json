@@ -1,0 +1,9 @@
+{
+  "name": "contract-test-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/provider-contract.test.js",
+    "start": "node provider/server.js"
+  }
+}

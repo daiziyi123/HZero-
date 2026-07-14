@@ -1,0 +1,97 @@
+/**
+ * @Description: 
+ * @Author: <yang.ni01@hand-china.com>
+ * @Date: 2023-02-16 17:56:58
+ * @LastEditTime: 2023-02-21 14:09:32
+ * @LastEditors: <yang.ni01@hand-china.com>
+ */
+.number-col {
+  :global {
+    .c7n-pro-input-number {
+      .c7n-pro-input-number-range-text {
+        .c7n-pro-input-number-range-split {
+          opacity: 0;
+        }
+      }
+
+      .c7n-pro-input-number-range-text::after {
+        content: ',';
+        position: absolute;
+        left: 50%;
+        top: 18%;
+      }
+    }
+  }
+
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.split-menu {
+  :global {
+    .c7n-menu-item>a,
+    .c7n-menu-item>a:hover {
+      color: #000;
+    }
+
+    .c7n-menu-item.c7n-menu-item-selected {
+      background-color: inherit;
+    }
+  }
+}
+
+.dropdown-menu {
+  :global {
+    .c7n-menu-item {
+      font-size: 16px !important;
+    }
+  }
+}
+
+.input-number-inner {
+  :global {
+    .c7n-pro-input-number-wrapper {
+      width: 100% !important;
+    }
+  }
+}
+
+.char-style:hover {
+  color: rgb(8, 64, 248) !important;
+  background: #e6f0ff;
+  cursor: pointer;
+}
+
+.tag-change-button {
+  color: rgb(8, 64, 248);
+  padding: 5px;
+  width: 32px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+
+.tag-change-button-tolerance {
+  font-size: 19px;
+  padding: 0;
+}
+
+.tag-change-button:hover {
+  background: rgb(230, 240, 255);
+}
+
+.detail-shows {
+  color: #b5b5b5;
+}
+
+.frequency-params {
+  :global {
+    tbody>tr>td>label {
+      padding: 0 !important;
+    }
+
+    tbody>tr>td>div {
+      padding: 0 !important;
+    }
+  }
+}
