@@ -2,9 +2,12 @@ import React from 'react';
 import Yqcloud from 'hzerojs-plugin-yqcloud-jssdk';
 import { configure } from 'choerodon-ui';
 
+const SPR_ROOT_CODE = 'spr.rivet.process';
+const SPR_CURVE_PATH = '/voyahRF/SPR/';
+
 const sprMenu = {
   id: 900000,
-  code: 'spr.rivet.process',
+  code: SPR_ROOT_CODE,
   name: 'SPR铆接工艺管理',
   quickIndex: 'SPR',
   level: 'site',
@@ -14,6 +17,20 @@ const sprMenu = {
   icon: 'setting',
   route: '',
   subMenus: [
+    {
+      id: 900001,
+      code: 'spr.rivet.dashboard',
+      name: '仪表板',
+      quickIndex: 'YBB',
+      level: 'site',
+      parentId: 900000,
+      type: 'menu',
+      sort: 10,
+      icon: 'chart',
+      route: '/voyahRF/dashboard',
+      parentName: 'SPR铆接工艺管理',
+      viewCode: 'spr.rivet.dashboard',
+    },
     {
       id: 900002,
       code: 'spr.rivet.final-value',
@@ -38,7 +55,7 @@ const sprMenu = {
       type: 'menu',
       sort: 30,
       icon: 'chart-line',
-      route: '/voyahRF/SPR/',
+      route: SPR_CURVE_PATH,
       parentName: 'SPR铆接工艺管理',
       viewCode: 'spr.rivet.curve',
     },
@@ -56,46 +73,44 @@ const sprMenu = {
       parentName: 'SPR铆接工艺管理',
       viewCode: 'spr.rivet.window-analysis',
     },
+    {
+      id: 900005,
+      code: 'spr.rivet.hmi-message',
+      name: 'HMI消息',
+      quickIndex: 'HMIXX',
+      level: 'site',
+      parentId: 900000,
+      type: 'menu',
+      sort: 50,
+      icon: 'message',
+      route: '/voyahRF/hmi-message',
+      parentName: 'SPR铆接工艺管理',
+      viewCode: 'spr.rivet.hmi-message',
+    },
   ],
-  viewCode: 'spr.rivet.process',
+  viewCode: SPR_ROOT_CODE,
 };
 
+const hasSprRoot = menuData =>
+  Array.isArray(menuData) && menuData.some(item => item && item.code === SPR_ROOT_CODE);
+
 const withSprMenu = menuData => {
-  if (!Array.isArray(menuData)) {
-    return menuData;
-  }
-  if (menuData.some(item => item && item.code === sprMenu.code)) {
+  if (!Array.isArray(menuData) || hasSprRoot(menuData)) {
     return menuData;
   }
   return [sprMenu, ...menuData];
 };
 
-const toLeafMenus = (menuList, result = []) => {
-  if (!Array.isArray(menuList)) {
-    return result;
-  }
-  menuList.forEach(item => {
-    if (Array.isArray(item.children) && item.children.length > 0) {
-      toLeafMenus(item.children, result);
-    } else if (Array.isArray(item.subMenus) && item.subMenus.length > 0) {
-      toLeafMenus(item.subMenus, result);
-    } else {
-      result.push(item);
-    }
-  });
-  return result;
-};
-
 const toHzeroMenu = (item, parent?) => {
-  const menuItem = {
+  const menuItem: any = {
     name: item.name,
+    title: item.name,
     icon: item.icon,
     path: item.route || '',
     id: item.id,
     parentId: item.parentId,
     quickIndex: item.quickIndex,
     type: item.type,
-    title: item.name,
     menuItem: {
       code: item.code,
       level: item.level,
@@ -114,16 +129,30 @@ const toHzeroMenu = (item, parent?) => {
 };
 
 const sprHzeroMenu = toHzeroMenu(sprMenu);
-const sprLeafMenus = toLeafMenus([sprHzeroMenu]).map(item => ({
-  ...item,
-  title: item.title || item.name,
-}));
+
+const toLeafMenus = (menuList, result: any[] = []) => {
+  if (!Array.isArray(menuList)) {
+    return result;
+  }
+  menuList.forEach(item => {
+    const children = item && (item.children || item.subMenus);
+    if (Array.isArray(children) && children.length > 0) {
+      toLeafMenus(children, result);
+    } else if (item) {
+      result.push(item);
+    }
+  });
+  return result;
+};
+
+const sprLeafMenus = toLeafMenus([sprHzeroMenu]);
+
+const hasSprHzeroRoot = menuData =>
+  Array.isArray(menuData) &&
+  menuData.some(item => item && (item.menuItem?.code === SPR_ROOT_CODE || item.name === sprMenu.name));
 
 const withSprHzeroMenu = menuData => {
-  if (!Array.isArray(menuData)) {
-    return menuData;
-  }
-  if (menuData.some(item => item && (item.name === sprMenu.name || item.menuItem?.code === sprMenu.code))) {
+  if (!Array.isArray(menuData) || hasSprHzeroRoot(menuData)) {
     return menuData;
   }
   return [sprHzeroMenu, ...menuData];
@@ -133,8 +162,13 @@ const withSprLeafMenus = leafMenus => {
   if (!Array.isArray(leafMenus)) {
     return leafMenus;
   }
-  const existingPaths = new Set(leafMenus.map(item => item && item.path));
-  return [...sprLeafMenus.filter(item => !existingPaths.has(item.path)), ...leafMenus];
+  const existingKeys = new Set(
+    leafMenus.map(item => item && (item.path || item.route || item.menuItem?.code)).filter(Boolean)
+  );
+  const missingSprLeaves = sprLeafMenus.filter(
+    item => !existingKeys.has(item.path || item.route || item.menuItem?.code)
+  );
+  return [...missingSprLeaves, ...leafMenus];
 };
 
 const sprMenuActionMiddleware = () => next => action => {
@@ -169,13 +203,10 @@ const syncSprMenuToStore = app => {
     }
     const menu = withSprHzeroMenu(globalState.menu || []);
     const menuLeafNode = withSprLeafMenus(globalState.menuLeafNode || []);
-    const hasSprMenu = Array.isArray(globalState.menu)
-      && globalState.menu.some(
-        item => item && (item.name === sprMenu.name || item.menuItem?.code === sprMenu.code)
-      );
-    const hasSprLeaf = Array.isArray(globalState.menuLeafNode)
-      && globalState.menuLeafNode.some(item => item && item.path === '/voyahRF/SPR/');
-    if (hasSprMenu && hasSprLeaf) {
+    const hasMenu = hasSprHzeroRoot(globalState.menu);
+    const hasLeaf = Array.isArray(globalState.menuLeafNode)
+      && globalState.menuLeafNode.some(item => item && item.path === SPR_CURVE_PATH);
+    if (hasMenu && hasLeaf) {
       return;
     }
     dispatching = true;
@@ -193,7 +224,7 @@ const syncSprMenuToStore = app => {
   setTimeout(inject, 1000);
 };
 
-const patchSprMenu = () => {
+const patchSprMenuApi = () => {
   try {
     [
       require('hzero-front/lib/services/api/primary'),
@@ -209,7 +240,20 @@ const patchSprMenu = () => {
       }
     });
   } catch (e) {
-    // Keep boot resilient if the HZERO API module shape changes.
+    // HZERO may change the API module shape between versions; keep boot resilient.
+  }
+};
+
+const registerTraceLogFallback = () => {
+  try {
+    const { setTraceLog } = require('hzero-front/lib/customize/traceLog');
+    setTraceLog({
+      code: 'TraceLog',
+      priority: -1,
+      component: async () => null,
+    });
+  } catch (e) {
+    // TraceLog is optional in this app. Missing HADM should not block the shell.
   }
 };
 
@@ -220,25 +264,27 @@ export const dva = {
 };
 
 const customSuspensionComponent = () => {
-  // tokenPath 为hzero插件接口
-  // apiHost  为燕千云对应环境的网关
-  // token 为燕千云对应环境中三方应用的token
   const map = new Map([
     [
       'HZERO.ZKNOW',
-      <Yqcloud tokenPath="/iam/v1/zknow/encrypt/quick" apiHost="https://api.test.yqcloud.com" token="288d1464-2be6-4b35-87c6-bbcc522f6ae4"></Yqcloud>,
+      <Yqcloud
+        tokenPath="/iam/v1/zknow/encrypt/quick"
+        apiHost="https://api.test.yqcloud.com"
+        token="288d1464-2be6-4b35-87c6-bbcc522f6ae4"
+      />,
     ],
   ]);
   return map;
 };
-// 初始化
+
 export const appInit = () => {
   const { overWriteConfig } = require('hzero-boot');
-  patchSprMenu();
+  patchSprMenuApi();
+  registerTraceLogFallback();
   overWriteConfig({
     dvaAppInit: syncSprMenuToStore,
   });
-  configure({ defaultActiveFirstOption: true, xlsx: () => import("xlsx") });
+  configure({ defaultActiveFirstOption: true, xlsx: () => import('xlsx') });
 };
 
-export default { customSuspensionComponent }
+export default { customSuspensionComponent };
